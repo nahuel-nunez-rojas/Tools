@@ -1,6 +1,7 @@
 import pandas as pd
 
 def load_file(ruta):
+    """Carga un archivo en formato CSV, Excel o JSON y lo retorna como un dataframe de Pandas."""
     try:
         # Verifica la extensión del archivo y carga los datos según corresponda
         if ruta.endswith('.csv'):
