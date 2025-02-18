@@ -1,7 +1,7 @@
 import pandas as pd
 
 def load_file(ruta):
-    """Carga un archivo en formato CSV, Excel o JSON y lo retorna como un dataframe de Pandas."""
+    """Carga un archivo en formato CSV, Excel o JSON dependiendo de su extension y lo retorna como un dataframe de Pandas."""
     try:
         # Verifica la extensión del archivo y carga los datos según corresponda
         if ruta.endswith('.csv'):
@@ -16,3 +16,4 @@ def load_file(ruta):
     except Exception as e:
         print(f"Error al cargar archivo: {e}")  # Imprime el error si ocurre una excepción
         return None  # Retorna None en caso de error
+    
